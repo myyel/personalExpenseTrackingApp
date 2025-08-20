@@ -9,7 +9,7 @@ DATA_PATH = "data/expenses.csv"
 def main():
     # if a file doesn't exist, create sample data
     try:
-        with open(DATA_PATH, "r") as f:
+        with open(DATA_PATH, "r"):
             pass
     except FileNotFoundError:
         generate_sample_data(DATA_PATH)
